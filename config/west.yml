@@ -8,6 +8,8 @@ manifest:
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+    - name: CesarRDF
+      url-base: https://github.com/CesarRDF
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -19,7 +21,7 @@ manifest:
       revision: main
     # nice_oled - nice_epaper
     - name: zmk-nice-oled
-      remote: mctechnology17
+      remote: CesarRDF
       revision: main
     # dongle_display!view
     - name: zmk-dongle-display-view
