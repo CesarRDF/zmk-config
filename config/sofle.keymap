@@ -12,14 +12,6 @@
 #define ZMK_MOUSE_SCRL_VAL 140
 
 / {
-    behaviors {
-        scroll_encoder: scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <20>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -42,7 +34,7 @@
                    &kp LGUI      &kp LALT  &kp LCTRL  &mo 1   &kp RET       &kp SPACE         &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings = <&scroll_encoder   &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&scroll_encoder &inc_dec_kp PG_UP PG_DN  &inc_dec_kp C_VOL_DN C_VOL_UP>;
 
         };
 
