@@ -30,6 +30,9 @@
 <svg id="mdi:palette">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-palette" viewBox="0 0 24 24"><path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z" /></svg>
 </svg>
+<svg id="mdi:toggle-switch">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch" viewBox="0 0 24 24"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
+</svg>
 <svg id="tabler:brightness-down">
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -1118,9 +1121,11 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(28, 119)" class="key keypos-12">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 75%">&amp;RGB_TOG</tspan></text>
+<g transform="translate(28, 119)" class="key toggle keypos-12">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key toggle"/>
+<use href="#mdi:led-on" xlink:href="#mdi:led-on" x="-9" y="-9" height="18" width="18.0" class="key toggle tap glyph mdi:led-on"/>
+<use href="#mdi:toggle-switch" xlink:href="#mdi:toggle-switch" x="-8" y="9" height="15" width="15.0" class="key toggle hold glyph mdi:toggle-switch"/>
+<use href="#mdi:led-outline" xlink:href="#mdi:led-outline" x="-8" y="-24" height="15" width="15.0" class="key toggle shifted glyph mdi:led-outline"/>
 </g>
 <g transform="translate(84, 119)" class="key sym_by_sym keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key sym_by_sym"/>
