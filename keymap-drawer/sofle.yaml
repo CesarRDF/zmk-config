@@ -47,7 +47,7 @@ layers:
   - '{'
   - '}'
   - {t: GAME, h: toggle}
-  - {t: ▽, type: trans}
+  - {t: BAS, h: toggle}
   - '['
   - ']'
   - ;
