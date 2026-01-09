@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  BAS: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', Esc, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', ↹, A, S, D, F, G, H, J, K, L,
-    ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, MUTE, PLAY PAUSE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$',
-    '$$mdi:apple-keyboard-control$$', LOW, ⏎, ␣, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
+  BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACKSPACE, ↹, Q, W, E, R, T, Y, U, I, O, P, '-', LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''', '`',
+    Z, X, C, V, B, MUTE, PLAY PAUSE, N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-control$$',
+    LOW, ␣, ENTER, RAI, '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$']
   LOW:
   - '`'
   - F1
@@ -16,12 +16,12 @@ layers:
   - F9
   - F10
   - F11
-  - RAI
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
+  - '6'
+  - Ctl+Q
+  - Ctl+W
+  - Ctl+E
+  - Ctl+R
+  - '7'
   - '6'
   - '7'
   - '8'
@@ -95,17 +95,17 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: ▽, type: trans}
   - CLCK
-  - {t: ▽, type: trans}
+  - PAGE DOWN
   - ←
   - ↓
   - →
   - ⌦
   - $$mdi:backspace-outline$$
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
+  - AC UNDO
+  - AC CUT
+  - AC COPY
+  - AC PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
