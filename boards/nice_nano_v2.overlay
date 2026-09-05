@@ -13,6 +13,14 @@
             low-power-enable;
         };
     };
+
+    i2c0_default: i2c0_default {
+        group1 {
+            // Reemplaza 0, 17 y 0, 20 por los pines reales de tu SDA y SCL
+            psels = <NRF_PSEL(TWIM_SDA, 0, 17)>, 
+                    <NRF_PSEL(TWIM_SCL, 0, 20)>;
+        };
+    };
 };
 
 &spi3 {
@@ -36,6 +44,31 @@
         spi-zero-frame = <0x40>;
 
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+    };
+};
+
+&i2c0 {
+    status = "okay";
+    compatible = "nordic,nrf-twim";
+    pinctrl-0 = <&i2c0_default>;
+    pinctrl-names = "default";
+    clock-frequency = <I2C_BITRATE_FAST>; // 400kHz para I2C-HID
+
+    touchpad: touchpad@15 {
+        compatible = "zmk,input-i2c-hid"; 
+        reg = <0x15>; // La dirección que obtuviste en el escáner
+        
+        // Pin INT configurado como activo en BAJO
+        irq-gpios = <&gpio1 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>; 
+    };
+};
+
+&gpio1 {
+    touchpad_rst {
+        gpio-hog;
+        gpios = <2 GPIO_ACTIVE_HIGH>;
+        output-high;
+        line-name = "Touchpad Reset";
     };
 };
 
