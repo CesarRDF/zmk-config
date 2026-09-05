@@ -10,8 +10,6 @@ manifest:
       url-base: https://github.com/mctechnology17
     - name: CesarRDF
       url-base: https://github.com/CesarRDF
-    - name: zmkcommunity
-      url-base: https://github.com/petejohanson
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -33,8 +31,5 @@ manifest:
     - name: zmk-oled-adapter
       remote: mctechnology17
       revision: main
-    - name: zmk-pointing
-      remote: zmkcommunity
-      revision: pointer-device-driver
   self:
     path: config
