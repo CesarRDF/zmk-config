@@ -179,11 +179,11 @@ include:
 
   ### SOFLEV2 SOFLEV1 SOFLEPLUS START ###
   # nice!oled sofle.
-  - board: nice_nano_v2
+  - board: nice_nano@v2
     shield: sofle_left
     artifact-name: nice_sofle_left_oled_rgb
     snippet: studio-rpc-usb-uart
-  - board: nice_nano_v2
+  - board: nice_nano@v2
     shield: sofle_right
     artifact-name: nice_sofle_right_oled_rgb
 
