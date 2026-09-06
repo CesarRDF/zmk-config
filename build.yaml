@@ -181,11 +181,9 @@ include:
   # nice!oled sofle.
   - board: nice_nano@2
     shield: sofle_left
-    artifact-name: nice_sofle_left_oled_rgb
     snippet: studio-rpc-usb-uart
   - board: nice_nano@2
     shield: sofle_right
-    artifact-name: nice_sofle_right_oled_rgb
 
   # # peripheral_left
   # - board: nice_nano_v2

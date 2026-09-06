@@ -53,3 +53,4 @@
         zmk,underglow = &led_strip;
     };
 };
+// vim: filetype=dts fdm=marker:
